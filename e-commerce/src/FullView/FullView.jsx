@@ -1,6 +1,7 @@
 import React from 'react'
 import apple from '../assets/Apple.jpg'
 import Verification from '../Home/components/Verification'
+import ProductsGrid from '../Home/ProductsGrid'
 function FullView() {
   return (
     <>
@@ -14,7 +15,14 @@ function FullView() {
             <button className="btn mb-3 btn-primary rounded-5 ms-5">Buy Now</button>
         </div>
     </div>
-    <Verification />
+    <div className="row">
+      <div className="d-inline-block col mb-5">
+        <Verification />
+      </div>
+      <div className="d-inline-block col">
+        <ProductsGrid subhead={"More you might like"} />
+      </div>
+    </div>
     </>
   )
 }
