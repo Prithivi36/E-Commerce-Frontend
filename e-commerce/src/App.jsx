@@ -1,16 +1,15 @@
 import { useState } from 'react'
-import './App.css'
-import ProductCard from './ProductCard'
-import FullView from './FullView'
-import Manufacture from './Manufacture'
+import ProductsGrid from './Home/ProductsGrid'
+import ProjectIntro from './ProjectIntro'
+import {HashRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-    <ProductCard />
-    <FullView/>
-    <Manufacture/>
+    
+    <ProjectIntro />
+    <ProductsGrid />
     </>
   )
 }

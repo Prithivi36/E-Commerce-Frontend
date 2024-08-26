@@ -1,6 +1,6 @@
 import React from 'react'
-import apple from './assets/Apple.jpg'
-import Verification from './Verification'
+import apple from '../assets/Apple.jpg'
+import Verification from '../Home/components/Verification'
 function FullView() {
   return (
     <>

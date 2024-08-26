@@ -3,41 +3,42 @@
 }
 
 .prod-name {
-  width: 100px;
+  width: 150px;
   height: 100px;
   overflow: hidden;
   font-weight: 600;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 700px) {
   .prod-img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   .prod-name {
-    width: 130px;
+    width: 250px;
     height: 50px; 
   }
 }
 
-@media (min-width: 761px) and (max-width: 991px) {
+@media (min-width: 700px) and (max-width: 991px) {
   .prod-img{
     width: 150px; 
     height: 150px;
   }
   .prod-name {
-    width: 180px; 
+    width: 150px; 
     height: 50px; 
   }
 }
 
-@media (min-width: 992px)  {
+@media (min-width: 992px)   {
   .prod-img{
     width: 250px; 
     height: 250px;
   }
   .prod-name {
-    width: 250px; 
+    width: 220px;
+    overflow: hidden; 
     height: 70px; 
   }
 }
@@ -58,4 +59,20 @@
 .symbol{
   font-size: 1.5rem;
   margin-bottom: 0px;
+}
+.prod-container{
+  border: solid .5px rgb(200, 196, 196);
+  border-radius: 3%;
+}
+.grid{
+  overflow-wrap: anywhere;
+  overflow: hidden;
+}
+.intro-img{
+  overflow: hidden;
+  max-width: 350px;
+  object-fit: contain;
+}
+.intro-text{
+  text-align: justify;
 }
