@@ -76,3 +76,6 @@
 .intro-text{
   text-align: justify;
 }
+.nav-item{
+  cursor: pointer;
+}

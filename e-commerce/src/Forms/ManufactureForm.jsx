@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Manufacture() {
+function ManufactureForm() {
   return (
     <div className='contrainer p-5'>
         <h6 className='fw-bolder text-center text-primary mb-3'>Add new Poduct</h6>
@@ -14,16 +14,16 @@ function Manufacture() {
                     <input type="number" className="form-control" id="price"  placeholder="Enter product price"/>
                 </div>
                 <div className="">
-                    <label className='ms-2 text-dark' htmlFor="desc">Product Price</label>
+                    <label className='ms-2 text-dark' htmlFor="desc">Product description</label>
                     <input type="number" className="form-control" id="desc"  placeholder="Enter product description"/>
-                </div>
-                <div className="">
-                    <label className='ms-2 text-dark' htmlFor="code">Product Code</label>
-                    <input type="text" className="form-control" id="code"  placeholder="Enter product code"/>
                 </div>
                 <div className="">
                     <label className='ms-2 text-dark' htmlFor="img">Product Image</label>
                     <input type="file" className="form-control" id="img"  placeholder="Enter product image"/>
+                </div>
+                <div className="">
+                    <label className='ms-2 text-dark' htmlFor="count">Product Count</label>
+                    <input type="number" className="form-control" id="count"  placeholder="Enter production count"/>
                 </div>
 
                 <button className="btn btn-primary mt-3 rounded-5 d-inline-block">Sell</button>
@@ -32,4 +32,4 @@ function Manufacture() {
   )
 }
 
-export default Manufacture
+export default ManufactureForm
