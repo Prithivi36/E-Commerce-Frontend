@@ -6,6 +6,7 @@ import FullView from './FullView/FullView'
 import Home from './Home/Home'
 import Navbar from './Navbar/Navbar'
 import Manufacture from './Manufacture/Manufacture'
+import MyProducts from './MyProducts/MyProducts'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/select' element={<FullView />} />
         <Route path='/add' element={<Manufacture />} />
+        <Route path='/myProduct' element={<MyProducts />} />
       </Routes>
     </HashRouter>
     </>
