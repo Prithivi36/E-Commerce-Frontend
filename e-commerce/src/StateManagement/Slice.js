@@ -11,7 +11,8 @@ const shopSlice=createSlice({
             price:"",
             owner:"",
             code:"",
-            id:""
+            id:"",
+            image:''
         }
     },
     reducers:{
@@ -25,6 +26,7 @@ const shopSlice=createSlice({
             state.fullpage.owner=action.payload.owner
             state.fullpage.code=action.payload.code
             state.fullpage.id=action.payload.id
+            state.fullpage.image=action.payload.image
         }
     },
     extraReducers(builder){

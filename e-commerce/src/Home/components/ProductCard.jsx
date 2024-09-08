@@ -12,6 +12,7 @@ function ProductCard(props) {
     dispatch(
       shopSlice.actions.setFullPage(
         {
+          image:props.product.image,
           name:props.product.productName,
           price:props.product.price,
           owner:props.product.owner,
@@ -26,7 +27,7 @@ function ProductCard(props) {
   return (
     <>
     <div className='prod-container col  mb-2 p-3 d-inline-block'>
-        <img className='prod-img' src={apple} alt="" />
+        <img className='prod-img' src={props.product.image} alt="" />
         <p className='prod-name mx-0'>{props.product.productName}</p>
         <p className='text-silent'>sold by {props.product.owner}</p>
         <p className='mx-0 text-success fw-bolder'>${props.product.price}</p>
