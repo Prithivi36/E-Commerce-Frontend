@@ -8,3 +8,6 @@ export const getProducts=createAsyncThunk('shop/getProducts',async ()=>{
     .then(res=>res.data)
     .catch(err=>console.log(err))
 })
+export function addProduct(p){
+    return axios.post(BaseUrl+'/product/new',p)
+}

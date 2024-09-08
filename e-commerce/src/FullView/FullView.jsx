@@ -11,7 +11,7 @@ function FullView() {
   return (
     <>
     <div className='container d-md-flex align-items-center gap-5'>
-        <img className='full-prod-img' src={apple} alt="" />
+        <img className='full-prod-img' src={details.image} alt="" />
         <div className="info-prod">
             <p className='fw-bolder  mb-0 text-primary'>{details.owner}</p>
             <h2 className='fw-bold'>{details.name}</h2>
